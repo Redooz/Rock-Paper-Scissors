@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_margin="0dp"
+        android:background="#1E2428"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtViewStatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Ready?"
+            android:textColor="@color/white"
+            android:textFontWeight="800"
+            android:textSize="80sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/txtViewUser"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:background="#29B1DD"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="User">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtViewMachine"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:background="#EA8C1F"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="Machine">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/rockButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="137dp"
+            android:layout_height="match_parent"
+            app:backgroundTint="#1E2428"
+            android:textColor="@color/white"
+            android:text="Rock" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/paperButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="137dp"
+            android:layout_height="match_parent"
+            app:backgroundTint="#1E2428"
+            android:textColor="@color/white"
+            android:text="Paper" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/scissorsButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="137dp"
+            android:layout_height="match_parent"
+            app:backgroundTint="#1E2428"
+            android:textColor="@color/white"
+            android:text="Scissors" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
